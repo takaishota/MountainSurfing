@@ -1,0 +1,444 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		65F4F57D14E9F48C009939AA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F4F57C14E9F48C009939AA /* UIKit.framework */; };
+		65F4F57F14E9F48C009939AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F4F57E14E9F48C009939AA /* Foundation.framework */; };
+		65F4F58114E9F48C009939AA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F4F58014E9F48C009939AA /* CoreGraphics.framework */; };
+		65F4F58714E9F48C009939AA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 65F4F58514E9F48C009939AA /* InfoPlist.strings */; };
+		65F4F58914E9F48C009939AA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F4F58814E9F48C009939AA /* main.m */; };
+		65F4F58D14E9F48C009939AA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F4F58C14E9F48C009939AA /* AppDelegate.m */; };
+		65F4F59014E9F48C009939AA /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65F4F58E14E9F48C009939AA /* MainStoryboard.storyboard */; };
+		65F4F59314E9F48C009939AA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F4F59214E9F48C009939AA /* ViewController.m */; };
+		65F4F59B14E9F48C009939AA /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F4F59A14E9F48C009939AA /* SenTestingKit.framework */; };
+		65F4F59C14E9F48C009939AA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F4F57C14E9F48C009939AA /* UIKit.framework */; };
+		65F4F59D14E9F48C009939AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F4F57E14E9F48C009939AA /* Foundation.framework */; };
+		65F4F5A514E9F48C009939AA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 65F4F5A314E9F48C009939AA /* InfoPlist.strings */; };
+		65F4F5A814E9F48C009939AA /* PixelBrowserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F4F5A714E9F48C009939AA /* PixelBrowserTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		65F4F59E14E9F48C009939AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65F4F56F14E9F48C009939AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 65F4F57714E9F48C009939AA;
+			remoteInfo = PixelBrowser;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		65F4F57814E9F48C009939AA /* PixelBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PixelBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		65F4F57C14E9F48C009939AA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		65F4F57E14E9F48C009939AA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		65F4F58014E9F48C009939AA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		65F4F58414E9F48C009939AA /* PixelBrowser-Info.plist */ = {isa = PBXFileReference; path = "PixelBrowser-Info.plist"; sourceTree = "<group>"; };
+		65F4F58614E9F48C009939AA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		65F4F58814E9F48C009939AA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		65F4F58A14E9F48C009939AA /* PixelBrowser-Prefix.pch */ = {isa = PBXFileReference; path = "PixelBrowser-Prefix.pch"; sourceTree = "<group>"; };
+		65F4F58B14E9F48C009939AA /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		65F4F58C14E9F48C009939AA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		65F4F58F14E9F48C009939AA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		65F4F59114E9F48C009939AA /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		65F4F59214E9F48C009939AA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		65F4F59914E9F48C009939AA /* PixelBrowserTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PixelBrowserTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		65F4F59A14E9F48C009939AA /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		65F4F5A214E9F48C009939AA /* PixelBrowserTests-Info.plist */ = {isa = PBXFileReference; path = "PixelBrowserTests-Info.plist"; sourceTree = "<group>"; };
+		65F4F5A414E9F48C009939AA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		65F4F5A614E9F48C009939AA /* PixelBrowserTests.h */ = {isa = PBXFileReference; path = PixelBrowserTests.h; sourceTree = "<group>"; };
+		65F4F5A714E9F48C009939AA /* PixelBrowserTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PixelBrowserTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		65F4F57514E9F48C009939AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65F4F57D14E9F48C009939AA /* UIKit.framework in Frameworks */,
+				65F4F57F14E9F48C009939AA /* Foundation.framework in Frameworks */,
+				65F4F58114E9F48C009939AA /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65F4F59514E9F48C009939AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65F4F59B14E9F48C009939AA /* SenTestingKit.framework in Frameworks */,
+				65F4F59C14E9F48C009939AA /* UIKit.framework in Frameworks */,
+				65F4F59D14E9F48C009939AA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		65F4F56D14E9F48C009939AA = {
+			isa = PBXGroup;
+			children = (
+				65F4F58214E9F48C009939AA /* PixelBrowser */,
+				65F4F5A014E9F48C009939AA /* PixelBrowserTests */,
+				65F4F57B14E9F48C009939AA /* Frameworks */,
+				65F4F57914E9F48C009939AA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		65F4F57914E9F48C009939AA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				65F4F57814E9F48C009939AA /* PixelBrowser.app */,
+				65F4F59914E9F48C009939AA /* PixelBrowserTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		65F4F57B14E9F48C009939AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				65F4F57C14E9F48C009939AA /* UIKit.framework */,
+				65F4F57E14E9F48C009939AA /* Foundation.framework */,
+				65F4F58014E9F48C009939AA /* CoreGraphics.framework */,
+				65F4F59A14E9F48C009939AA /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		65F4F58214E9F48C009939AA /* PixelBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				65F4F58B14E9F48C009939AA /* AppDelegate.h */,
+				65F4F58C14E9F48C009939AA /* AppDelegate.m */,
+				65F4F58E14E9F48C009939AA /* MainStoryboard.storyboard */,
+				65F4F59114E9F48C009939AA /* ViewController.h */,
+				65F4F59214E9F48C009939AA /* ViewController.m */,
+				65F4F58314E9F48C009939AA /* Supporting Files */,
+			);
+			path = PixelBrowser;
+			sourceTree = "<group>";
+		};
+		65F4F58314E9F48C009939AA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				65F4F58414E9F48C009939AA /* PixelBrowser-Info.plist */,
+				65F4F58514E9F48C009939AA /* InfoPlist.strings */,
+				65F4F58814E9F48C009939AA /* main.m */,
+				65F4F58A14E9F48C009939AA /* PixelBrowser-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		65F4F5A014E9F48C009939AA /* PixelBrowserTests */ = {
+			isa = PBXGroup;
+			children = (
+				65F4F5A614E9F48C009939AA /* PixelBrowserTests.h */,
+				65F4F5A714E9F48C009939AA /* PixelBrowserTests.m */,
+				65F4F5A114E9F48C009939AA /* Supporting Files */,
+			);
+			path = PixelBrowserTests;
+			sourceTree = "<group>";
+		};
+		65F4F5A114E9F48C009939AA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				65F4F5A214E9F48C009939AA /* PixelBrowserTests-Info.plist */,
+				65F4F5A314E9F48C009939AA /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		65F4F57714E9F48C009939AA /* PixelBrowser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65F4F5AB14E9F48D009939AA /* Build configuration list for PBXNativeTarget "PixelBrowser" */;
+			buildPhases = (
+				65F4F57414E9F48C009939AA /* Sources */,
+				65F4F57514E9F48C009939AA /* Frameworks */,
+				65F4F57614E9F48C009939AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PixelBrowser;
+			productName = PixelBrowser;
+			productReference = 65F4F57814E9F48C009939AA /* PixelBrowser.app */;
+			productType = "com.apple.product-type.application";
+		};
+		65F4F59814E9F48C009939AA /* PixelBrowserTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65F4F5AE14E9F48D009939AA /* Build configuration list for PBXNativeTarget "PixelBrowserTests" */;
+			buildPhases = (
+				65F4F59414E9F48C009939AA /* Sources */,
+				65F4F59514E9F48C009939AA /* Frameworks */,
+				65F4F59614E9F48C009939AA /* Resources */,
+				65F4F59714E9F48C009939AA /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				65F4F59F14E9F48C009939AA /* PBXTargetDependency */,
+			);
+			name = PixelBrowserTests;
+			productName = PixelBrowserTests;
+			productReference = 65F4F59914E9F48C009939AA /* PixelBrowserTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		65F4F56F14E9F48C009939AA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 65F4F57214E9F48C009939AA /* Build configuration list for PBXProject "PixelBrowser" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 65F4F56D14E9F48C009939AA;
+			productRefGroup = 65F4F57914E9F48C009939AA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				65F4F57714E9F48C009939AA /* PixelBrowser */,
+				65F4F59814E9F48C009939AA /* PixelBrowserTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		65F4F57614E9F48C009939AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65F4F58714E9F48C009939AA /* InfoPlist.strings in Resources */,
+				65F4F59014E9F48C009939AA /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65F4F59614E9F48C009939AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65F4F5A514E9F48C009939AA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		65F4F59714E9F48C009939AA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		65F4F57414E9F48C009939AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65F4F58914E9F48C009939AA /* main.m in Sources */,
+				65F4F58D14E9F48C009939AA /* AppDelegate.m in Sources */,
+				65F4F59314E9F48C009939AA /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65F4F59414E9F48C009939AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65F4F5A814E9F48C009939AA /* PixelBrowserTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		65F4F59F14E9F48C009939AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 65F4F57714E9F48C009939AA /* PixelBrowser */;
+			targetProxy = 65F4F59E14E9F48C009939AA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		65F4F58514E9F48C009939AA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65F4F58614E9F48C009939AA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		65F4F58E14E9F48C009939AA /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65F4F58F14E9F48C009939AA /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		65F4F5A314E9F48C009939AA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65F4F5A414E9F48C009939AA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		65F4F5A914E9F48D009939AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		65F4F5AA14E9F48D009939AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		65F4F5AC14E9F48D009939AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PixelBrowser/PixelBrowser-Prefix.pch";
+				INFOPLIST_FILE = "PixelBrowser/PixelBrowser-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		65F4F5AD14E9F48D009939AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PixelBrowser/PixelBrowser-Prefix.pch";
+				INFOPLIST_FILE = "PixelBrowser/PixelBrowser-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		65F4F5AF14E9F48D009939AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PixelBrowser.app/PixelBrowser";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PixelBrowser/PixelBrowser-Prefix.pch";
+				INFOPLIST_FILE = "PixelBrowserTests/PixelBrowserTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		65F4F5B014E9F48D009939AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PixelBrowser.app/PixelBrowser";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PixelBrowser/PixelBrowser-Prefix.pch";
+				INFOPLIST_FILE = "PixelBrowserTests/PixelBrowserTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		65F4F57214E9F48C009939AA /* Build configuration list for PBXProject "PixelBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65F4F5A914E9F48D009939AA /* Debug */,
+				65F4F5AA14E9F48D009939AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65F4F5AB14E9F48D009939AA /* Build configuration list for PBXNativeTarget "PixelBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65F4F5AC14E9F48D009939AA /* Debug */,
+				65F4F5AD14E9F48D009939AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		65F4F5AE14E9F48D009939AA /* Build configuration list for PBXNativeTarget "PixelBrowserTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65F4F5AF14E9F48D009939AA /* Debug */,
+				65F4F5B014E9F48D009939AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 65F4F56F14E9F48C009939AA /* Project object */;
+}
