@@ -7,14 +7,44 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
 
 @implementation AppDelegate
 
-@synthesize window = _window;
+@synthesize window = _window, vc;
+
+
+//For scheme
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
+    
+    /*
+    NSString* msg = [NSString stringWithFormat:@"[URL]%@\n[schame]%@\n[Query]%@", 
+                     [url absoluteString], [url scheme], [url query]];    
+     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"debug"
+                                                    message:msg
+                                                   delegate:self
+                                          cancelButtonTitle:@"OK"
+                                          otherButtonTitles:nil, nil];    
+     [alert show]; 
+     */
+    //vc.navBar.text = [NSString stringWithFormat:@"http://www.google.com/search?q=aa&ie=utf-8&oe=utf-8"];
+    NSString* newURL = [[url absoluteString] stringByReplacingOccurrencesOfString:@"mthttp://" withString:@"http://"];
+    NSString* newURL2 = [newURL stringByReplacingOccurrencesOfString:@"mthttps://" withString:@"https://"];
+    DLog(@"appdelegate handleOpen");
+    vc = (ViewController*)(_window.rootViewController);
+    [vc startLoading:newURL2];
+    
+    return YES;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    //NSLog(@"%@",@"didFinishLaunchingWithOptions");
     // Override point for customization after application launch.
+    DLog(@"appdelegate finish");
+    //UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle: nil];
+    //vc = [mainStoryboard instantiateViewControllerWithIdentifier:@"mainViewController"];
+
     return YES;
 }
 							
